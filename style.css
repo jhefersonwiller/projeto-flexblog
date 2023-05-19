@@ -2,6 +2,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
+/* Configurações gerais */
+
+:root {
+    --azul-escuro: #122ab2;
+    --azul-claro: #2c70ff;
+    --cinza-escuro: #222222;
+    --cinza: #7c7c7c;
+    --purple: #ae81ff;
+    --pink: #f9265e;
+    --blue: #66d9eb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,4 +23,59 @@
 html,
 body {
     font-family: "Nunito Sans", helvetica, arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* header */
+
+div.top-head {
+    background-color: var(--azul-escuro);
+    padding: 10px;
+}
+
+div.top-head-info {
+    max-width: 960px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.top-head-info p,
+a {
+    color: #fff;
+    padding: 0 10px;
+}
+
+div.top-head-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header.menu {
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.menu p {
+    font-size: 2.25em;
+    color: #fff;
+    margin: 0 10px;
+    padding: 15px 10px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0 10px;
 }
