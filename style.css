@@ -191,3 +191,94 @@ h1.intro {
 .blue {
     border-top: 8px solid var(--blue);
 }
+
+/* Planos */
+
+.planos {
+    background: var(--branco-gelo);
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.planos-item {
+    flex: 1 1 200px;
+    border: 4px solid #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.planos-item h2 {
+    font-size: 3em;
+    color: var(--cinza);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.planos-item span {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.planos-item sup {
+    font-size: 1.5rem;
+}
+
+.planos-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: var(--cinza);
+}
+
+.planos-item li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.planos-item li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right: 10px solid var(--azul-claro);
+}
+
+.planos-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid var(--cinza-escuro);
+    color: var(--cinza-escuro);
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.25em;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .planos {
+        padding: 0 10px;
+    }
+
+    .planos .planos-item:nth-child(3) {
+        order: -2;
+    }
+
+    .planos .planos-item:nth-child(2) {
+        order: -1;
+    }
+}
