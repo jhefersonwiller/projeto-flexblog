@@ -5,13 +5,15 @@
 /* Configurações gerais */
 
 :root {
-    --azul-escuro: #122ab2;
-    --azul-claro: #2c70ff;
-    --cinza-escuro: #222222;
+    --branco-gelo: #f7f7f7;
+    --cinza-claro: #a4a4a4;
     --cinza: #7c7c7c;
+    --cinza-escuro: #222222;
     --purple: #ae81ff;
     --pink: #f9265e;
     --blue: #66d9eb;
+    --azul-claro: #2c70ff;
+    --azul-escuro: #122ab2;
 }
 
 * {
@@ -55,8 +57,8 @@ img {
     padding-top: 10px;
 }
 
-.top-head a,
-p {
+.top-head p,
+.top-head a {
     margin: 0 10px 10px 10px;
 }
 
@@ -92,4 +94,100 @@ p {
 
 .menu-nav ul {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: var(--azul-escuro);
+}
+
+/* intro */
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1.intro {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 60px auto;
+}
+
+/* sobre */
+
+.sobre {
+    border-top: 2px solid var(--azul-claro);
+    border-bottom: 2px solid var(--azul-claro);
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin-right: 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color: var(--cinza);
+    text-align: justify;
+}
+
+.sobre-img {
+    flex: 1 1 120px;
+    margin: 0 10px;
+}
+
+/* Produtos */
+
+.produto-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.produto h1 {
+    font-size: 3em;
+    margin: 60px 0;
+}
+
+.produto-item {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.produto-item h2 {
+    font-size: 3em;
+    color: var(--cinza-claro);
+    background: var(--branco-gelo);
+    padding: 60px 20px;
+}
+
+.purple {
+    border-top: 8px solid var(--purple);
+}
+
+.pink {
+    border-top: 8px solid var(--pink);
+}
+
+.blue {
+    border-top: 8px solid var(--blue);
 }
