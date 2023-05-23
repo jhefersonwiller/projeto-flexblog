@@ -29,7 +29,7 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#planos">Planos</a></li>
-                    <li><a href="#qualidade">Contato</a></li>
+                    <li><a href="#qualidade">Qualidade</a></li>
                 </ul>
             </nav>
         </div>
@@ -116,58 +116,62 @@
 
         <section class="qualidade" id="qualidade">
             <div class="qualidade-item">
-                <div>
-                    <h2>Inteligente</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
-                        impedit eligendi nihil unde, quod amet quis praesentium.</p>
-                </div>
-                <div>
-                    <h2>Compacto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
-                        impedit eligendi nihil unde, quod amet quis praesentium. Sit amet consectetur, adipisicing elit.
-                    </p>
-                </div>
-                <div>
-                    <h2>Econômico</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
-                        impedit eligendi nihil unde, quod amet quis praesentium.</p>
-                </div>
-                <div>
-                    <h2>Transparente</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
-                        impedit eligendi nihil unde, quod amet quis praesentium.</p>
-                </div>
-                <div>
-                    <h2>Opaco</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
-                        impedit eligendi nihil unde, quod amet quis praesentium. Sit amet consectetur, adipisicing elit.
-                    </p>
-                </div>
-                <div>
-                    <h2>Sustentável</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
-                        impedit eligendi nihil unde, quod amet quis praesentium.</p>
-                </div>
+                <h2>Inteligente</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
+                    impedit eligendi nihil unde, quod amet quis praesentium.</p>
+            </div>
+            <div class="qualidade-item">
+                <h2>Compacto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
+                    impedit eligendi nihil unde, quod amet quis praesentium. Sit amet consectetur, adipisicing elit.
+                </p>
+            </div>
+            <div class="qualidade-item">
+                <h2>Econômico</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
+                    impedit eligendi nihil unde, quod amet quis praesentium.</p>
+            </div>
+            <div class="qualidade-item">
+                <h2>Transparente</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
+                    impedit eligendi nihil unde, quod amet quis praesentium.</p>
+            </div>
+            <div class="qualidade-item">
+                <h2>Opaco</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
+                    impedit eligendi nihil unde, quod amet quis praesentium. Sit amet consectetur, adipisicing elit.
+                </p>
+            </div>
+            <div class="qualidade-item">
+                <h2>Sustentável</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aspernatur tempore in, eius
+                    impedit eligendi nihil unde, quod amet quis praesentium.</p>
             </div>
         </section>
 
-        <section class="newsletter">
+        <section class="newsletter-bg">
             <div class="newsletter-info">
                 <h1>Newsletter</h1>
                 <p>
-                    Assine e fique por dentro das novidades
+                    Assine e fique por dentro das novidades.
                 </p>
             </div>
-            <div class="newsletter-btn">
-                <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                <input type="submit" value="Assinar">
-            </div>
+            <form class="newsletter-form">
+                <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="email">
+                <button type="submit" onclick="assinar()">Assinar</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>FlexBlog&copy; Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        function assinar() {
+            window.alert('Este site é apenas um modelo. Obrigado por visualizar!')
+        }
+    </script>
 </body>
 
 </html>
